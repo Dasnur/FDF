@@ -146,8 +146,10 @@ int		turn_left_30(int key, void *param)
 			{
 				//xnew = (p->coord[j][i].xcoord) * 0.866 - (p->coord[j][i].ycoord) * 0.5;
 				xnew = p->coord[j][i].xcoord;
-				ynew = new_x_rot(p->coord[j][i].ycoord, p->coord[j][i].zcoord);
-				znew = new_y_rot(p->coord[j][i].ycoord, p->coord[j][i].zcoord);
+				//ynew = new_x_rot(p->coord[j][i].ycoord, p->coord[j][i].zcoord);
+				//znew = new_y_rot(p->coord[j][i].ycoord, p->coord[j][i].zcoord);
+				ynew = p->coord[j][i].zcoord * 0.1736 + p->coord[j][i].ycoord * 0.9848;
+				//znew = p->coord[j][i].zcoord * 0.9848;
 				mlx_pixel_put(p->conn, p->win, (p->coord[j][i].xcoord * 40 + x), (ynew * 40 + y), 0xFFDD00);
 				if (i > 0)
 				{
@@ -206,8 +208,8 @@ int		turn_left_30(int key, void *param)
 					}
 					count += 0.01;
 				}
-				p->coord[j][i].zcoord = znew;
-				p->coord[j][i].ycoord = ynew;
+				//p->coord[j][i].zcoord = znew;
+				//p->coord[j][i].ycoord = ynew;
 				count = 0;
 				i++;
 			}
@@ -314,7 +316,7 @@ int		main(int argc, char **argv)
 		nbrs[j] = (int *)malloc(sizeof(int) * 100);
 		while (map[i])
 		{
-			nbrs[j][i] = ft_getnbr(map[i]) / 10;
+			nbrs[j][i] = ft_getnbr(map[i]);
 			i++;
 		}
 		j++;
@@ -328,7 +330,7 @@ int		main(int argc, char **argv)
 	{
 		while (i < endi)
 		{
-			printf("%d ", nbrs[j][i]);
+			printf("%d ", nbrs[j][i]) * 3;
 			i++;
 		}
 		i = 0;
