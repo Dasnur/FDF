@@ -39,6 +39,8 @@ _____
 Карта Марса
 ![mars1_fsf](https://user-images.githubusercontent.com/45533581/108629529-5d471c80-7471-11eb-84fc-7d95d7089324.gif)
 
+Изменение вида проекции на примере пирамиды
+![pyra_fdf](https://user-images.githubusercontent.com/45533581/108629705-43f2a000-7472-11eb-9ccb-67393f2fc442.gif)
 __________
 <a name="Старт"></a>
 **Старт**
@@ -47,5 +49,6 @@ __________
 * Запуск просиходит в виде ./fdf  "../maps/*fdf"
 
 <a name="Старт Windows"></a>
+**Старт Windows**
 * Для запуска на Windows из подсистемы WSL необходимо использовать Xming server
 * Перед запускам использовать "export DISPLAY=:0"
