@@ -22,14 +22,14 @@
 * Графчиеское 3D пердставление плоскости
 
 **Управление**
-* w/s - x rot
-* q/e - y rot
-* a/d - z rot
-* i - iso
-* p - parallel
-* arrows - move proj
-* +/- - zoom proj
-* Колечико мышки - zoom
+* `w/s` - x rot
+* `q/e` - y rot
+* `a/d` - z rot
+* `i` - iso
+* `p` - parallel
+* `arrows` - move proj
+* `+/-` - zoom proj
+* Колесико мышки - zoom
 * Зажатие ЛКМ - вращение проекции
 * esc - завершение программы
 _____
@@ -44,11 +44,11 @@ _____
 __________
 <a name="Старт"></a>
 **Старт**
-* Выполните make в папке FDF_linux/FDF
-* Имя исполняемого файла fdf
-* Запуск просиходит в виде ./fdf  "../maps/*fdf"
+* Выполните make в папке `FDF_linux/FDF`
+* Имя исполняемого файла `fdf`
+* Запуск просиходит в виде `./fdf  "../maps/*fdf"`
 
 <a name="Старт_Windows"></a>
 **Старт Windows**
 * Для запуска на Windows из подсистемы WSL необходимо использовать Xming server
-* Перед запускам использовать "export DISPLAY=:0"
+* Перед запускам использовать `export DISPLAY=:0`
