@@ -1,6 +1,6 @@
 # "FDF" This project is about created a simplified 3D graphic representation of a relief landscape
 * [Как запустить](#Старт)
-* [Как запустить Windows](#Старт Windows)
+* [Как запустить Windows](#Старт_Windows)
 
 **Задача:**
 Визуализировать описанную поверхность
@@ -48,7 +48,7 @@ __________
 * Имя исполняемого файла fdf
 * Запуск просиходит в виде ./fdf  "../maps/*fdf"
 
-<a name="Старт Windows"></a>
+<a name="Старт_Windows"></a>
 **Старт Windows**
 * Для запуска на Windows из подсистемы WSL необходимо использовать Xming server
 * Перед запускам использовать "export DISPLAY=:0"
